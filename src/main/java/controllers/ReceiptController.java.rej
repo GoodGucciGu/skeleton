@@ -1,0 +1,9 @@
+diff a/src/main/java/controllers/ReceiptController.java b/src/main/java/controllers/ReceiptController.java	(rejected hunks)
+@@ -22,7 +22,6 @@ public class ReceiptController {
+     public ReceiptController(ReceiptDao receipts) {
+         this.receipts = receipts;
+ 
+-        public ReceiptController ()
+     }
+ 
+     @POST
