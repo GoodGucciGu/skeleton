@@ -1,11 +1,4 @@
-<<<<<<< HEAD
-import controllers.HelloWorldController;
-import controllers.NetIDController;
-import controllers.ReceiptController;
-import controllers.TagController;
-=======
 import controllers.*;
->>>>>>> upstream/master
 import dao.ReceiptDao;
 import dao.TagDao;
 import io.dropwizard.Application;
@@ -49,14 +42,10 @@ public class SimpleApplication extends Application<Configuration> {
         // you need class and method @Path annotations!
         env.jersey().register(new StaticHtmlController());
         env.jersey().register(new ReceiptController(receiptDao));
-<<<<<<< HEAD
         env.jersey().register(new TagController(tagDao, receiptDao));
         env.jersey().register(new NetIDController());
+        env.jersey().register(new ReceiptImageController());
 
         SimpleApplication.enableSessionSupport(env);
-
-=======
-        env.jersey().register(new ReceiptImageController());
->>>>>>> upstream/master
     }
 }
